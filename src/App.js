@@ -15,21 +15,11 @@ class App extends Component {
   };
 
   render() {
-    const style = {
-      backgroundColor: "red"
-      //backgroundColor: "white",
-      //font: "inherit",
-      //border: "5px solid red",
-      //padding: "8px",
-      //cursor: "pointer",
-      //fontSize: "20px"
-    };
 
     return (
       <div className="App">
         <UserOutput userName={this.state.userName} />
         <UserInput
-          style={style}
           userName={this.state.userName}
           changed={this.userNameChangeHandler}
         />
